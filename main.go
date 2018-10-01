@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("Initialize population...")
 	rand.Seed(time.Now().UTC().UnixNano())
 	var automata uint64 = 0x00000001
-	for i := 0; i < 22250; i++ {
+	for i := 0; i < 250; i++ {
 		fmt.Printf("%064b\n", automata)
 		automata = generateNextAutomata(automata)
 	}
